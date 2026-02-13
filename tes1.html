@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beranda</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Segoe UI, sans-serif;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#1a0026,#3b0066);
+  color:white;
+  text-align:center;
+}
+
+.container{
+  background:rgba(255,255,255,0.08);
+  padding:30px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+h1{
+  margin-bottom:10px;
+}
+
+p{
+  opacity:0.8;
+}
+
+button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  background:#ff4dff;
+  color:white;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#ff00ff;
+  transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+  <h1>Selamat Datang</h1>
+  <p>Ini adalah halaman beranda.</p>
+  <button onclick="bukaHalaman()">Masuk</button>
+</div>
+
+<script>
+function bukaHalaman(){
+  window.location.href = "tes2.html";
+}
+</script>
+
+</body>
+</html>
