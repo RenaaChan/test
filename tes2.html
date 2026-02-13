@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Halaman Kedua</title>
+
+<style>
+body{
+  margin:0;
+  font-family:Segoe UI, sans-serif;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#001a33,#004080);
+  color:white;
+  text-align:center;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:30px;
+  border-radius:15px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+h2{
+  margin-bottom:10px;
+}
+
+button{
+  margin-top:20px;
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  font-size:16px;
+  cursor:pointer;
+  background:#00c3ff;
+  color:white;
+  transition:0.3s;
+}
+
+button:hover{
+  background:#0099cc;
+  transform:scale(1.05);
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <h2>Halaman Kedua</h2>
+  <p>Kamu sudah berpindah dari beranda.</p>
+  <button onclick="kembali()">Kembali ke Beranda</button>
+</div>
+
+<script>
+function kembali(){
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
